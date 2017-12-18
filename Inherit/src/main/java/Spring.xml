@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<!-- <bean id="training" class="com.test.demo.Day1Hello.Training">
+<property name="name" value="Spring"></property>
+</bean> -->
+
+<bean id="empbean2" class="com.test.demo.Inherit.Employee">
+<constructor-arg name="id" value="10" type="int"></constructor-arg>
+<constructor-arg name="name" value="Kavya"></constructor-arg>
+</bean>
+<bean id="empbean3" class="com.test.demo.Inherit.Employee" parent="empbean2">
+<constructor-arg name="address" ref="addrbean"></constructor-arg>
+
+</bean>
+<bean id="addrbean" class="com.test.demo.Inherit.Address">
+<constructor-arg name="hno" value="40" type="int"></constructor-arg>
+<constructor-arg name="location" value="Hyd"></constructor-arg>
+</bean>
+</beans>
