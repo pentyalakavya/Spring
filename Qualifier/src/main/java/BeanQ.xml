@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!-- <bean id="abc" class="com.test.demo.Annotation.Autowire.First" autowire="byName"></bean> -->
+<!-- <bean id="bcc" class="com.test.demo.Annotation.Autowire.Second"></bean> -->
+
+<bean id="emp1" class="com.test.demo.Annotation.Qualifier.Employee">
+<property name="name" value="kavya" ></property>
+
+</bean>
+<bean id="emp2" class="com.test.demo.Annotation.Qualifier.Employee">
+<property name="name" value="kavya" ></property>
+
+</bean>
+<bean id="profile" class="com.test.demo.Annotation.Qualifier.Profile">
+
+</bean>
+</beans>
